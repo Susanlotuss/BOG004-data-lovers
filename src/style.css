@@ -1,3 +1,9 @@
+*{
+    font-family: 'friz_quadrataregular';
+    src: url('friz_quadrata_regular-webfont.woff2') format('woff2'),
+         url('friz_quadrata_regular-webfont.woff') format('woff');
+}
+
 .oculto{
     display: none;
 }
@@ -27,7 +33,6 @@ body{
 }
 
 .btn1 {
-  font-family: 'frizquadratabold';
   background-color: #4F7FC8;
   border-radius: 8px;
   border-style: none;
