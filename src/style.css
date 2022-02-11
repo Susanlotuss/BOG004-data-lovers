@@ -153,8 +153,54 @@ body{
   font-weight: bold;
   font-size: 18px;
   margin-right: 30px;
+  margin-top: 5px;
 }
 
 .roleOption:hover{
   color: #294369;
 }
+
+.btnBusqueda{
+    background-color: #1b5374;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 35px;
+    margin: 0;
+    outline: none;
+    padding: 5px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.btnBusqueda:hover,
+.btnBusqueda:focus {
+  background-color: #143c53;
+}
+
+.barraDeBusqueda{
+  width: 235px;
+  height: 28px;
+  font-weight: bold;
+  color: gray;
+  background: #A2A2A2;
+  mix-blend-mode: hard-light;
+  box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.25);
+  border-radius: 5px;
+}
+
+.reinos{
+  background-color: #A2C4D7;
+}
+  
+
