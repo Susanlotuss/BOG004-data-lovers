@@ -32,6 +32,14 @@ body{
     margin-bottom: 30px;
 }
 
+
+.Btns{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+
 .btn1 {
   background-color: #4F7FC8;
   border-radius: 8px;
@@ -55,6 +63,7 @@ body{
   vertical-align: baseline;
   touch-action: manipulation;
   margin-right: 100px;
+  margin-bottom: 30px;
 }
 
 .btn1:hover,
@@ -93,15 +102,3 @@ body{
     background-color: #999043;
   }
 
-.rito {
-  width: 100px;
-}
-.conoceATu {
-  background-image: url(https://pbs.twimg.com/media/FIWfP8TXIAML9u3?format=jpg&name=4096x4096);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 30%;
-  padding: 20%;
-  text-align: center;
-  color: white;
-}
