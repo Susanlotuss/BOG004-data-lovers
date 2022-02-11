@@ -33,7 +33,9 @@ body{
 }
 
 .Btns{
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .btn1 {
@@ -59,6 +61,7 @@ body{
   vertical-align: baseline;
   touch-action: manipulation;
   margin-right: 100px;
+  margin-bottom: 30px;
 }
 
 .btn1:hover,
