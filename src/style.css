@@ -102,3 +102,24 @@ body{
     background-color: #999043;
   }
 
+.paginaDos{
+  display: flex;
+}
+
+.barrita{
+  background-color: black;
+}
+
+.rito{
+  width: 100px;
+}
+
+.conoceATu{
+  background-image: url("https://pbs.twimg.com/media/FIWfP8TXIAML9u3?format=jpg&name=4096x4096");
+  background-size: cover;
+  background-position: 30%;
+  padding: 20%;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
