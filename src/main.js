@@ -2,13 +2,9 @@ import data from './data/lol/lol.js';
 import {filterData} from './data.js';
 
 //FUNCION DE FILTRO
+const champs = data;
 const champions = champs.data;
 let Filteredchampions = champs.data;
-
-const filterData = (data, condition) => {
-  const arrFiltered = data.filter(eachChampion => eachChampion.tags.includes(condition));
-  return arrFiltered;
-}; 
 
 document.getElementById("Assassin").addEventListener("click", ()=>{
     const condition = "Assassin";
@@ -44,4 +40,5 @@ function selectViewChampions(key) {
   } else if (key === 'gameView') {
     sectionHome.style.display = 'none';
     sectionLanding.style.display = 'none';
-  }
+    }
+};
