@@ -32,11 +32,13 @@ body{
     margin-bottom: 30px;
 }
 
+
 .Btns{
   display: flex;
   justify-content: center;
   justify-items: center;
 }
+
 
 .btn1 {
   background-color: #4F7FC8;

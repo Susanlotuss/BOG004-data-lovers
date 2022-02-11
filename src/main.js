@@ -2,6 +2,7 @@ import data from './data/lol/lol.js';
 import {filterData} from './data.js';
 
 //FUNCION DE FILTRO
+
 const champs = data;
 const champions = champs.data;
 let Filteredchampions = champs.data;
@@ -17,6 +18,7 @@ document.getElementById("Assassin").addEventListener("click", ()=>{
   
 console.log(Filteredchampions);
 
+
 //BOTONES
 const btnLeft = document.getElementById('campeones');
 btnLeft.addEventListener('click', () => {
@@ -31,6 +33,7 @@ btnRight.addEventListener('click', () => {
 });
 
 function selectViewChampions(key) {
+
   const sectionHome = document.getElementById('startPage');
   const sectionLanding = document.getElementById('landingPage');
 
