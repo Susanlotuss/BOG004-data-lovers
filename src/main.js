@@ -2,13 +2,9 @@ import data from './data/lol/lol.js';
 import {filterData} from './data.js';
 
 //FUNCION DE FILTRO
+const champs = data;
 const champions = champs.data;
 let Filteredchampions = champs.data;
-
-const filterData = (data, condition) => {
-  const arrFiltered = data.filter(eachChampion => eachChampion.tags.includes(condition));
-  return arrFiltered;
-}; 
 
 document.getElementById("Assassin").addEventListener("click", ()=>{
     const condition = "Assassin";
@@ -21,8 +17,8 @@ document.getElementById("Assassin").addEventListener("click", ()=>{
   
 console.log(Filteredchampions);
 
-//BOTONES
 const btnLeft = document.getElementById('campeones');
+
 btnLeft.addEventListener('click', () => {
   // eslint-disable-next-line no-use-before-define
   selectViewChampions('champView');
@@ -35,7 +31,7 @@ btnRight.addEventListener('click', () => {
 });
 
 function selectViewChampions(key) {
-  const sectionHome = document.getElementById('startPage');
+  const sectionHome = document.getElementById('PaginaDeInicio');
   const sectionLanding = document.getElementById('landingPage');
 
   if (key === 'champView') {
@@ -44,4 +40,5 @@ function selectViewChampions(key) {
   } else if (key === 'gameView') {
     sectionHome.style.display = 'none';
     sectionLanding.style.display = 'none';
-  }
+    }
+};
