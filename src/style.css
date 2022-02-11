@@ -32,6 +32,10 @@ body{
     margin-bottom: 30px;
 }
 
+.Btns{
+  display: inline-flex;
+}
+
 .btn1 {
   background-color: #4F7FC8;
   border-radius: 8px;
