@@ -1,39 +1,77 @@
 *{
-    font-family: 'friz_quadrataregular';
-    src: url('friz_quadrata_regular-webfont.woff2') format('woff2'),
-         url('friz_quadrata_regular-webfont.woff') format('woff');
+  font-family: 'friz_quadrataregular';
+  src: url('friz_quadrata_regular-webfont.woff2') format('woff2'),
+       url('friz_quadrata_regular-webfont.woff') format('woff');
 }
 
 .oculto{
-    display: none;
+  display: none;
 }
 
 body{
-    background-color: black;
+  background-color: black;
 }
 
 .inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    background-image: url("https://cdn1.dotesports.com/wp-content/uploads/sites/4/2022/01/05175411/Porcelain-Kindred-2048x1152-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30%;
-    padding: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-image: url("https://cdn1.dotesports.com/wp-content/uploads/sites/4/2022/01/05175411/Porcelain-Kindred-2048x1152-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+  padding: 20%;
 }
 
 .logoriot{
-    padding: 0;
-    margin: 0;
-    width: 800px;
-    margin-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  width: 800px;
+  margin-bottom: 30px;
+}
+
+.Btns{
+display: flex;
+justify-content: center;
+justify-items: center;
 }
 
 .btn1 {
-  background-color: #4F7FC8;
+background-color: #4F7FC8;
+border-radius: 8px;
+border-style: none;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: bold;
+height: 60px;
+line-height: 20px;
+list-style: none;
+margin: 0;
+outline: none;
+padding: 10px 50px;
+position: relative;
+text-align: center;
+text-decoration: none;
+transition: color 100ms;
+vertical-align: baseline;
+touch-action: manipulation;
+margin-right: 100px;
+margin-bottom: 30px;
+}
+
+.btn1:hover,
+.btn1:focus {
+background-color: #294369;
+}
+
+.btn2 {
+  font-family: 'frizquadratabold';
+  background-color: #CCC15D;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -47,49 +85,17 @@ body{
   list-style: none;
   margin: 0;
   outline: none;
-  padding: 10px 50px;
+  padding: 10px 100px;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
   vertical-align: baseline;
   touch-action: manipulation;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
-.btn1:hover,
-.btn1:focus {
-  background-color: #294369;
+.btn2:hover,
+.btn2:focus {
+  background-color: #999043;
 }
-
-.btn2 {
-    font-family: 'frizquadratabold';
-    background-color: #CCC15D;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    height: 60px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 100px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    touch-action: manipulation;
-    margin-right: 20px;
-  }
-  
-  .btn2:hover,
-  .btn2:focus {
-    background-color: #999043;
-  }
-
