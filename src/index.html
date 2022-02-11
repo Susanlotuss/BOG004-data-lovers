@@ -6,7 +6,85 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <section id="Pagina de inicio" class="inicio">
+
+        <div id="logo"><img src="img/logo lol.png" alt="riot logo" class="logoriot"></div>
+
+        <div id="Btns">
+          <button id="campeones" class="btn1">DESCUBRIR NUEVOS CAMPEONES</button>
+          <button id="jugar" class="btn2">JUGAR AHORA</button>
+        </div>
+      </section>
+
+      <section id="landingPage" class="oculto">
+        <div id="barrita" class="barrita">
+          <img src="" alt="riot logo">
+        </div>
+        
+        <div id="barritaAbajo" class="barrita">
+
+          
+          <input type="text" class="barraDeBusqueda" placeholder="Buscar" id="buscador">
+          <button id="Busqueda" class="btn">Buscar</button>
+
+
+          <button class="roleOption" id="Assassin" value="Assassin">ASESINO</button>
+          <button class="roleOption" id="Fighter" value="Fighter">LUCHADOR</button>
+          <button class="roleOption" id="Mage" value="Mage">MAGO</button>
+          <button class="roleOption" id="Marksman" value="Marksman">TIRADOR</button>
+          <button class="roleOption" id="Support" value="Support">SOPORTE</button>
+          <button class="roleOption" id="Tank" value="Tank">TANQUE</button>
+
+
+          <select name="reinos">
+            <option selected disabled> Escoge una region</option>
+            <option value="1">Aguasturbias</option>
+            <option value="2">Ciudad de Bandle</option>
+            <option value="3">Demacia</option>
+            <option value="4">El fréljord</option>
+            <option value="5">El vacío</option>
+            <option value="6">Islas de las sombras</option>
+            <option value="7">Ixtal</option>
+            <option value="8">Jonia</option>
+            <option value="9">Noxus</option>
+            <option value="10">Piltóver</option>
+            <option value="11">Shurima</option>
+            <option value="12">Targón</option>
+            <option value="13">Zaun</option>
+          </select>
+        </div>
+
+        <div id="cartas" class="cartitas"></div>
+
+      </section>
+
+      <section class="mostrarInf" class="oculto">
+
+        <div class="nombreCampeon" id="nombreCampeon">
+          <p class="nombre"></p>
+          <p class="titulo"></p>
+        </div>
+
+        <div class="centro" id="centro">
+
+          <p id="imgCampeon"></p>
+          <p id="descripcionCamp"></p>
+
+        </div>
+
+        <div class="stats" id="stats">
+
+          <p id="tituloStats"></p>
+          <p id="info"></p>
+
+        </div>
+
+      </section>
+
+
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
