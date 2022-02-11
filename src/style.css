@@ -117,9 +117,28 @@ body{
 .conoceATu{
   background-image: url("https://pbs.twimg.com/media/FIWfP8TXIAML9u3?format=jpg&name=4096x4096");
   background-size: cover;
-  background-position: 30%;
-  padding: 20%;
+  background-repeat: no-repeat;
+  padding: 10%;
   text-align: center;
   color: #FFFFFF;
+}
+
+.primero{
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.segundo{
+  padding: 0;
+  margin: 0;
+  font-size: 80px;
   font-weight: bold;
+}
+
+.barrita2{
+  display: flex;
+  background-color: #A2C4D7;
+  padding: 10px;
 }

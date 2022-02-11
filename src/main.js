@@ -34,7 +34,7 @@ btnRight.addEventListener('click', () => {
 
 function selectViewChampions(key) {
 
-  const sectionHome = document.getElementById('startPage');
+  const sectionHome = document.getElementById('PaginaDeInicio');
   const sectionLanding = document.getElementById('landingPage');
 
   if (key === 'champView') {
