@@ -1,17 +1,20 @@
 import data from './data/lol/lol.js';
 import {filterData} from './data.js';
 
-//FUNCION DE FILTRO
+//FUNCIONES DE FILTRO
 
 const champs = data;
 const champions = champs.data;
 let Filteredchampions = champs.data;
+console.log(champions);
 
+//FILTRO ASESINO
 document.getElementById("Assassin").addEventListener("click", ()=>{
     const condition = "Assassin";
     Filteredchampions = (filterData(Object.values(champions), condition));
     for(let i = 0; i < Filteredchampions.length; i++){
-        document.getElementById("cartas").innerHTML += Filteredchampions[i].name;
+        document.getElementById("todos").style.display = 'none';
+        document.getElementById("vista").innerHTML +=  `<div><img src = "${Filteredchampions[i].splash}" width = 300> <br> ${Filteredchampions[i].name}</div>`;
     };
     console.log(Filteredchampions);
   });
@@ -22,13 +25,16 @@ console.log(Filteredchampions);
 //BOTONES
 const btnLeft = document.getElementById('campeones');
 btnLeft.addEventListener('click', () => {
-  // eslint-disable-next-line no-use-before-define
   selectViewChampions('champView');
+  Filteredchampions = (filterData(Object.values(champions), ""));
+  console.log(Filteredchampions);
+  for(let i = 0; i < Filteredchampions.length; i++){
+      document.getElementById("cartas").innerHTML +=  `<div class="cartitas"><img src = "${Filteredchampions[i].splash}" width = 300> <br> ${Filteredchampions[i].name}</br> </div>`;
+  };
 });
 const btnRight = document.getElementById('jugar');
 
 btnRight.addEventListener('click', () => {
-  // eslint-disable-next-line no-use-before-define
   selectViewChampions('gameView');
 });
 
@@ -45,3 +51,11 @@ function selectViewChampions(key) {
     sectionLanding.style.display = 'none';
     }
 };
+
+
+const tarjetasChamps = (arrays) =>{
+
+  const contenedor = modal.getElementById("vista");
+
+  contenedor.innerHTML = `<p id="vista"><img src = "${arrays.img}" width = 110 height = 110> <br> ${champs.name}</p>`;
+}
