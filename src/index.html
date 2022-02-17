@@ -13,42 +13,49 @@
         <div id="logo"><img src="img/logo lol.png" alt="riot logo" class="logoriot"></div>
 
         <div id="Btns">
-
           <button id="campeones" class="btn1">DISCOVER CHAMPIONS</button>
 
           <a href="https://www.leagueoflegends.com/es-mx/">
           <button id="jugar" class="btn2">PLAY NOW</button>
           </a>
-          
         </div>
+
       </section>
 
+
       <section id="landingPage" class="oculto pagina2">
+        
         <div id="barrita" class="barrita">
           <img src="img/logo riot blanco.webp" alt="riot logo" class="rito">
         </div>
         
         <div class="conoceATu">
-          <p class="boldText primero">MEET YOUR</p>
-          <P class="boldText segundo">CHAMPION</P>
+          <p class="primero">MEET YOUR</p>
+          <P class="segundo">CHAMPION</P>
         </div>
 
-        <div id="barritaAbajo" class="barrita">
+        <div id="barritaAbajo" class="barrita2">
 
-          
-          <input type="text" class="barraDeBusqueda" placeholder="Buscar" id="buscador">
-          <button id="Busqueda" class="btn">Buscar</button>
+          <div>
+            <input type="text" class="barraDeBusqueda" placeholder="CHAMPIONS BY NAME" id="buscador"> </input>
+
+            <button id="Busqueda" class="btnBusqueda">Search</button>
+
+          </div>
+
+          <div>
+            <button class="roleOption" id="All">ALL</button>
+            <button class="roleOption" id="Assassin" value="Assassin">ASSASSIN</button>
+            <button class="roleOption" id="Fighter" value="Fighter">FIGHTER</button>
+            <button class="roleOption" id="Mage" value="Mage">MAGE</button>
+            <button class="roleOption" id="Marksman" value="Marksman">MARKSMAN</button>
+            <button class="roleOption" id="Support" value="Support">SUPPORT</button>
+            <button class="roleOption" id="Tank" value="Tank">TANK</button>
+          </div>
 
 
-          <button class="roleOption" id="Assassin" value="Assassin">ASSASSIN</button>
-          <button class="roleOption" id="Fighter" value="Fighter">FIGHTER</button>
-          <button class="roleOption" id="Mage" value="Mage">MAGE</button>
-          <button class="roleOption" id="Marksman" value="Marksman">MARKSMAN</button>
-          <button class="roleOption" id="Support" value="Support">SUPPORT</button>
-          <button class="roleOption" id="Tank" value="Tank">TANK</button>
 
-
-          <select name="reinos">
+          <select name="reinos" class="reinos">
             <option selected disabled> Choose a region</option>
             <option value="1">Bandle city</option>
             <option value="2">Bilgewater</option>
@@ -65,33 +72,19 @@
             <option value="13">Zaun</option>
           </select>
         </div>
-
-        <div id="cartas" class="cartitas"></div>
-
-      </section>
-
-      <section class="mostrarInf" class="oculto">
-
-        <div class="nombreCampeon" id="nombreCampeon">
-          <p class="nombre"></p>
-          <p class="titulo"></p>
+        
+        <div id="modal" class="modalOculto">
         </div>
 
-        <div class="centro" id="centro">
-
-          <p id="imgCampeon"></p>
-          <p id="descripcionCamp"></p>
-
-        </div>
-
-        <div class="stats" id="stats">
-
-          <p id="tituloStats"></p>
-          <p id="info"></p>
+        <div id="cartas" class="cartas">
+          
+          <p id="todos"></p>
 
         </div>
 
       </section>
+
+
 
 
     </div>
