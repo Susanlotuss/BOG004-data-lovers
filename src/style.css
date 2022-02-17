@@ -27,12 +27,10 @@ body{
   padding: 0;
   margin: 0;
   width: 800px;
-  margin-bottom: 30px;
 }
 
 
 .Btns{
-display: flex;
 justify-content: center;
 justify-items: center;
 }
@@ -56,12 +54,9 @@ list-style: none;
 margin: 0;
 outline: none;
 padding: 10px 50px;
-position: relative;
 text-align: center;
 text-decoration: none;
 transition: color 100ms;
-vertical-align: baseline;
-touch-action: manipulation;
 margin-right: 100px;
 margin-bottom: 30px;
 }
@@ -90,7 +85,6 @@ background-color: #294369;
   margin: 0;
   outline: none;
   padding: 10px 100px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
@@ -146,6 +140,12 @@ background-color: #A2C4D7;
 padding: 10px;
 }
 
+.opcionesderol{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
 .roleOption{
 border: none;
 background-color: #A2C4D7;
@@ -158,7 +158,7 @@ margin-top: 5px;
 }
 
 .roleOption:hover{
-color: #8be4e7;
+color: #294369;
 }
 
 .btnBusqueda{
@@ -174,7 +174,6 @@ color: #8be4e7;
   margin: 0;
   outline: none;
   padding: 5px 16px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
@@ -187,85 +186,80 @@ background-color: #143c53;
 }
 
 .barraDeBusqueda{
-  width: 235px;
-  height: 28px;
-  font-weight: bold;
-  color: gray;
-  background: #A2A2A2;
-  mix-blend-mode: hard-light;
-  box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.25);
-  border-radius: 5px;
-  color: black;
-  text-align: center;
+width: 235px;
+height: 28px;
+font-weight: bold;
+color: gray;
+background: #A2A2A2;
+mix-blend-mode: hard-light;
+box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.25);
+border-radius: 5px;
 }
 
 .reinos{
 background-color: #A2C4D7;
 }
 
+.cartas{
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+text-align: center;
+}
+
+
+
+.contenedorTarjetas{
+display: inline-flex;
+flex-wrap: wrap;
+padding: 0;
+margin: 0;
+justify-items: center;
+justify-content: center;
+}
+
 .cards{
-  text-align: center;
-  display: inline-block;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: column;
-  margin-left: 100px;
-  margin-right: 50px;
-  margin-top: 50px;
-  margin-bottom: 60px;
-  color: white;
-  text-align: center;
-  border-radius: 6px;
-  box-shadow: 0px 15px 25px
-  rgba(0, 0, 0, 0.50);
-  cursor: pointer;
+display: inline-flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin-right: 20px;
+margin-top: 90px;
+margin-bottom: 10px;
+color: white;
+text-align: center;
+border-radius: 6px;
+box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+cursor: pointer;
+
 }
 
 .cards:hover {
-  transform: scale(1.3);
-  box-shadow: 0 0 20px #A2C4D7;
+transform: scale(1.3);
+box-shadow: 0px 0px 15px 15px #A2C4D7;
 }
 
 .modalOculto{
-  display: none;
-  background-image: url("/src/img/background.jfif");
-  justify-content: center;
-  justify-items: center;
-  width: 60%;
-  height: 60%;
-  position: fixed;
-  margin-left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  margin-top: 50px;
-  z-index: 2;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  text-indent: fixed;
-  padding: 10em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFFFFF;
+display: none;
+background-color: #A2C4D7;
+justify-content: center;
+justify-items: center;
+width: 120vh;
+height: 90%;
+position: fixed;
+margin-left: 50%;
+transform: translateX(-50%) translateY(-100%);
+margin-top: 10%;
+z-index: 2;
+flex-direction: column;
+align-items: center;
+text-align: center;
+overflow-y: auto;
 }
 
-.refresh {
-  background-color: #1b5374;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  height: 35px;
-  margin: 0;
-  outline: none;
-  padding: 5px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
+.btn-close{
+display: flex;
+margin: 0;
+padding: 0;
+margin-left: 800px;
 }
