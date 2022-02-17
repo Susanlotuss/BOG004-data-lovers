@@ -7,7 +7,6 @@ import {filterData,
 const champs = data;
 const champions = champs.data;
 let Filteredchampions = champs.data;
-console.log(champions);
 
 //FILTRO ASESINO
 document.getElementById("Assassin").addEventListener("click", ()=>{
