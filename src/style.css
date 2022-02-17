@@ -1,49 +1,81 @@
 *{
-    font-family: 'friz_quadrataregular';
-    src: url('friz_quadrata_regular-webfont.woff2') format('woff2'),
-         url('friz_quadrata_regular-webfont.woff') format('woff');
+  font-family: 'friz_quadrataregular';
 }
 
 .oculto{
-    display: none;
+  display: none;
 }
 
 body{
-    background-color: black;
+  background-color: black;
 }
 
 .inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    background-image: url("https://cdn1.dotesports.com/wp-content/uploads/sites/4/2022/01/05175411/Porcelain-Kindred-2048x1152-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30%;
-    padding: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-image: url("https://cdn1.dotesports.com/wp-content/uploads/sites/4/2022/01/05175411/Porcelain-Kindred-2048x1152-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+  padding: 20%;
 }
 
 .logoriot{
-    padding: 0;
-    margin: 0;
-    width: 800px;
-    margin-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  width: 800px;
+  margin-bottom: 30px;
 }
 
 
 .Btns{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+display: flex;
+justify-content: center;
+justify-items: center;
 }
 
 
 .btn1 {
+justify-content: center;
+justify-items: center;
+background-color: #4F7FC8;
+border-radius: 8px;
+border-style: none;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-size: 14px;
+font-weight: bold;
+height: 60px;
+line-height: 20px;
+list-style: none;
+margin: 0;
+outline: none;
+padding: 10px 50px;
+position: relative;
+text-align: center;
+text-decoration: none;
+transition: color 100ms;
+vertical-align: baseline;
+touch-action: manipulation;
+margin-right: 100px;
+margin-bottom: 30px;
+}
+
+.btn1:hover,
+.btn1:focus {
+background-color: #294369;
+}
+
+.btn2 {
   justify-content: center;
   justify-items: center;
-  background-color: #4F7FC8;
+  font-family: 'frizquadratabold';
+  background-color: #CCC15D;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -57,134 +89,101 @@ body{
   list-style: none;
   margin: 0;
   outline: none;
-  padding: 10px 50px;
+  padding: 10px 100px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  margin-right: 20px;
+}
+
+.btn2:hover,
+.btn2:focus {
+  background-color: #999043;
+}
+
+.paginaDos{
+display: flex;
+position: relative;
+}
+
+.barrita{
+background-color: black;
+}
+
+.rito{
+width: 100px;
+}
+
+.conoceATu{
+background-image: url("https://pbs.twimg.com/media/FIWfP8TXIAML9u3?format=jpg&name=4096x4096");
+background-size: cover;
+background-repeat: no-repeat;
+padding: 10%;
+text-align: center;
+color: #FFFFFF;
+}
+
+.primero{
+padding: 0;
+margin: 0;
+margin-top: 100px;
+font-size: 50px;
+}
+
+.segundo{
+padding: 0;
+margin: 0;
+font-size: 80px;
+font-weight: bold;
+}
+
+.barrita2{
+display: flex;
+justify-content: space-between;
+justify-items: center;
+background-color: #A2C4D7;
+padding: 10px;
+}
+
+.roleOption{
+border: none;
+background-color: #A2C4D7;
+outline: none;
+cursor: pointer;
+font-weight: bold;
+font-size: 18px;
+margin-right: 10px;
+margin-top: 5px;
+}
+
+.roleOption:hover{
+color: #8be4e7;
+}
+
+.btnBusqueda{
+  background-color: #1b5374;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 35px;
+  margin: 0;
+  outline: none;
+  padding: 5px 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
   vertical-align: baseline;
-  touch-action: manipulation;
-  margin-right: 100px;
-  margin-bottom: 30px;
 }
 
-.btn1:hover,
-.btn1:focus {
-  background-color: #294369;
-}
-
-.btn2 {
-    justify-content: center;
-    justify-items: center;
-    font-family: 'frizquadratabold';
-    background-color: #CCC15D;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    height: 60px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 100px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    margin-right: 20px;
-  }
-  
-  .btn2:hover,
-  .btn2:focus {
-    background-color: #999043;
-  }
-
-.paginaDos{
-  display: flex;
-}
-
-.barrita{
-  background-color: black;
-}
-
-.rito{
-  width: 100px;
-}
-
-.conoceATu{
-  background-image: url("https://pbs.twimg.com/media/FIWfP8TXIAML9u3?format=jpg&name=4096x4096");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 10%;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.primero{
-  padding: 0;
-  margin: 0;
-  margin-top: 100px;
-  font-size: 50px;
-}
-
-.segundo{
-  padding: 0;
-  margin: 0;
-  font-size: 80px;
-  font-weight: bold;
-}
-
-.barrita2{
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  background-color: #A2C4D7;
-  padding: 10px;
-}
-
-.roleOption{
-  border: none;
-  background-color: #A2C4D7;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
-  margin-right: 10px;
-  margin-top: 5px;
-}
-
-.roleOption:hover{
-  color: #294369;
-}
-
-.btnBusqueda{
-    background-color: #1b5374;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    height: 35px;
-    margin: 0;
-    outline: none;
-    padding: 5px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-}
-  
 .btnBusqueda:hover,
 .btnBusqueda:focus {
-  background-color: #143c53;
+background-color: #143c53;
 }
 
 .barraDeBusqueda{
@@ -196,22 +195,75 @@ body{
   mix-blend-mode: hard-light;
   box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.25);
   border-radius: 5px;
+  color: black;
+  text-align: center;
 }
 
 .reinos{
-  background-color: #A2C4D7;
+background-color: #A2C4D7;
 }
 
-.cartitas{
+.cards{
   display: inline-block;
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 100px;
+  margin-right: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
   color: white;
   text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px
+  rgba(0, 0, 0, 0.50);
+  cursor: pointer;
 }
-  
 
+.cards img:hover {
+  transform: scale(1.3);
+}
+
+.modalOculto{
+  display: none;
+  background-image: url("/src/img/background.jfif");
+  justify-content: center;
+  justify-items: center;
+  width: 60%;
+  height: 60%;
+  position: fixed;
+  margin-left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  margin-top: 50px;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-indent: fixed;
+  padding: 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.refresh {
+  background-color: #1b5374;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 35px;
+  margin: 0;
+  outline: none;
+  padding: 5px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+}

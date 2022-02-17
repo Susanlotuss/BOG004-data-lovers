@@ -24,6 +24,7 @@
 
 
       <section id="landingPage" class="oculto pagina2">
+        
         <div id="barrita" class="barrita">
           <img src="img/logo riot blanco.webp" alt="riot logo" class="rito">
         </div>
@@ -43,6 +44,7 @@
           </div>
 
           <div>
+            <button class="roleOption" id="All">ALL</button>
             <button class="roleOption" id="Assassin" value="Assassin">ASSASSIN</button>
             <button class="roleOption" id="Fighter" value="Fighter">FIGHTER</button>
             <button class="roleOption" id="Mage" value="Mage">MAGE</button>
@@ -50,6 +52,7 @@
             <button class="roleOption" id="Support" value="Support">SUPPORT</button>
             <button class="roleOption" id="Tank" value="Tank">TANK</button>
           </div>
+
 
 
           <select name="reinos" class="reinos">
@@ -69,39 +72,26 @@
             <option value="13">Zaun</option>
           </select>
         </div>
+        
+        <div id="modal" class="modalOculto">
+        </div>
 
-        <div id="cartas" class="cartitas">
+        <div id="cartas" class="cartas">
+          
+          <p id="todos" class="contenedorTarjetas"></p>
+          <p id="asesino"></p>
+          <p id="mago"></p>
+          <p id="peleador"></p>
+          <p id="tirador"></p>
+          <p id="soporte"></p>
+          <p id="tanque"></p>
 
-          <p id="vista"></p>
-          <p id="todos"></p>
-          <p></p>
 
         </div>
 
       </section>
 
-      <section class="mostrarInf" class="oculto">
 
-        <div class="nombreCampeon" id="nombreCampeon">
-          <p class="nombre"></p>
-          <p class="titulo"></p>
-        </div>
-
-        <div class="centro" id="centro">
-
-          <p id="imgCampeon"></p>
-          <p id="descripcionCamp"></p>
-
-        </div>
-
-        <div class="stats" id="stats">
-
-          <p id="tituloStats"></p>
-          <p id="info"></p>
-
-        </div>
-
-      </section>
 
 
     </div>

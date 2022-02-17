@@ -1,3 +1,4 @@
+//FUNCIONES DE FILTRO
 export const filterData = (data, condition) => {
   if (condition === "") {
     const arrFiltered = data.filter(eachChampion => eachChampion);  
