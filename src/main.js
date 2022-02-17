@@ -1,5 +1,7 @@
 import data from './data/lol/lol.js';
-import {filterData} from './data.js';
+import {filterData, 
+        searchInput
+       } from './data.js';
 
 //FUNCIONES DE FILTRO
 const champs = data;
@@ -7,22 +9,13 @@ const champions = champs.data;
 let Filteredchampions = champs.data;
 console.log(champions);
 
-//FILTRO BUSCAR
-
-
 //FILTRO ASESINO
 document.getElementById("Assassin").addEventListener("click", ()=>{
   const condition = "Assassin";
   Filteredchampions = (filterData(Object.values(champions), condition));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'none';
-      document.getElementById("mago").style.display = 'none';
-      document.getElementById("peleador").style.display = 'none';
-      document.getElementById("tirador").style.display = 'none';
-      document.getElementById("soporte").style.display = 'none';
-      document.getElementById("tanque").style.display = 'none';
-      document.getElementById("asesino").style.display = 'block';
-      document.getElementById("asesino").innerHTML +=  `<div class="cards asesinodos"><img src = "${Filteredchampions[i].splash}" width = 400> <br> ${Filteredchampions[i].name}</div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards asesinodos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 //MODAL EN FILTRO ASESINO
     const cards = document.getElementsByClassName("asesinodos");
@@ -39,15 +32,9 @@ document.getElementById("Assassin").addEventListener("click", ()=>{
 document.getElementById("Mage").addEventListener("click", ()=>{
   const condition = "Mage";
   Filteredchampions = (filterData(Object.values(champions), condition));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'none';
-      document.getElementById("mago").style.display = 'block';
-      document.getElementById("peleador").style.display = 'none';
-      document.getElementById("tirador").style.display = 'none';
-      document.getElementById("soporte").style.display = 'none';
-      document.getElementById("tanque").style.display = 'none';
-      document.getElementById("asesino").style.display = 'none';
-      document.getElementById("mago").innerHTML +=  `<div class="cards magodos"><img src = "${Filteredchampions[i].splash}" width = 400> <br> ${Filteredchampions[i].name}</div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards magodos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 
 //MODAL EN FILTRO MAGE
@@ -64,15 +51,9 @@ document.getElementById("Mage").addEventListener("click", ()=>{
 document.getElementById("Fighter").addEventListener("click", ()=>{
   const condition = "Fighter";
   Filteredchampions = (filterData(Object.values(champions), condition));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'none';
-      document.getElementById("mago").style.display = 'none';
-      document.getElementById("peleador").style.display = 'block';
-      document.getElementById("tirador").style.display = 'none';
-      document.getElementById("soporte").style.display = 'none';
-      document.getElementById("tanque").style.display = 'none';
-      document.getElementById("asesino").style.display = 'none';
-      document.getElementById("peleador").innerHTML +=  `<div class="cards peladordos"><img src = "${Filteredchampions[i].splash}" width = 400> <br> ${Filteredchampions[i].name}</div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards peladordos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 //MODAL EN FILTRO FIGHTER
     const cards = document.getElementsByClassName("peladordos");
@@ -89,15 +70,9 @@ document.getElementById("Fighter").addEventListener("click", ()=>{
 document.getElementById("Marksman").addEventListener("click", ()=>{
   const condition = "Marksman";
   Filteredchampions = (filterData(Object.values(champions), condition));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'none';
-      document.getElementById("mago").style.display = 'none';
-      document.getElementById("peleador").style.display = 'none';
-      document.getElementById("tirador").style.display = 'block';
-      document.getElementById("soporte").style.display = 'none';
-      document.getElementById("tanque").style.display = 'none';
-      document.getElementById("asesino").style.display = 'none';
-      document.getElementById("tirador").innerHTML +=  `<div class="cards tiradordos"><img src = "${Filteredchampions[i].splash}" width = 400> <br> ${Filteredchampions[i].name}</div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards tiradordos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 //MODAL EN FILTRO MARKSMAN
     const cards = document.getElementsByClassName("tiradordos");
@@ -114,15 +89,9 @@ document.getElementById("Marksman").addEventListener("click", ()=>{
 document.getElementById("Support").addEventListener("click", ()=>{
   const condition = "Support";
   Filteredchampions = (filterData(Object.values(champions), condition));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'none';
-      document.getElementById("mago").style.display = 'none';
-      document.getElementById("peleador").style.display = 'none';
-      document.getElementById("tirador").style.display = 'none';
-      document.getElementById("soporte").style.display = 'block';
-      document.getElementById("tanque").style.display = 'none';
-      document.getElementById("asesino").style.display = 'none';
-      document.getElementById("soporte").innerHTML +=  `<div class="cards soportedos"><img src = "${Filteredchampions[i].splash}" width = 400> <br> ${Filteredchampions[i].name}</div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards soportedos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 //MODAL EN FILTRO SUPPORT
     const cards = document.getElementsByClassName("soportedos");
@@ -139,15 +108,9 @@ document.getElementById("Support").addEventListener("click", ()=>{
 document.getElementById("Tank").addEventListener("click", ()=>{
   const condition = "Tank";
   Filteredchampions = (filterData(Object.values(champions), condition));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'none';
-      document.getElementById("mago").style.display = 'none';
-      document.getElementById("peleador").style.display = 'none';
-      document.getElementById("tirador").style.display = 'none';
-      document.getElementById("soporte").style.display = 'none';
-      document.getElementById("tanque").style.display = 'block';
-      document.getElementById("asesino").style.display = 'none';
-      document.getElementById("tanque").innerHTML +=  `<div class="cards tanquedos"><img src = "${Filteredchampions[i].splash}" width = 400> <br> ${Filteredchampions[i].name}</div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards tanquedos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 //MODAL EN FILTRO TANK
     const cards = document.getElementsByClassName("tanquedos");
@@ -163,14 +126,9 @@ document.getElementById("Tank").addEventListener("click", ()=>{
 //filtro todos
 document.getElementById("All").addEventListener("click", ()=>{
   Filteredchampions = (filterData(Object.values(champions), ""));
+  document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").style.display = 'block';
-      document.getElementById("mago").style.display = 'none';
-      document.getElementById("peleador").style.display = 'none';
-      document.getElementById("tirador").style.display = 'none';
-      document.getElementById("soporte").style.display = 'none';
-      document.getElementById("tanque").style.display = 'none';
-      document.getElementById("asesino").style.display = 'none';
+      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].name}</p> </div>`;
     }
 //MODAL
     const cards = document.getElementsByClassName("cards");
@@ -189,7 +147,7 @@ btnLeft.addEventListener('click', () => {
   selectViewChampions('champView');
   Filteredchampions = (filterData(Object.values(champions), ""));
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400> <br>${Filteredchampions[i].name}</br> </div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].name}</p> </div>`;
     }
   
 //MODAL EN TODOS
@@ -231,3 +189,19 @@ const modalchampions = document.getElementById('modal');
 document.getElementById("modal").addEventListener('click', () => {
   modalchampions.style.display = 'none';
 });
+
+//buscador
+document.getElementById("Busqueda").addEventListener("click", () => {
+  let result = document.getElementById("buscador").value;
+  Filteredchampions = (searchInput(Object.values(champions), result));
+    document.getElementById("todos").innerHTML =  `<div class="cards"><img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].name}</p> </div>`;
+
+    const cards = document.getElementsByClassName("cards");
+        for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", () => {
+          document.getElementById("modal").style.display= "flex";
+          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].blurb}</p>`
+      })
+    }
+  }
+);

@@ -204,13 +204,14 @@ background-color: #A2C4D7;
 }
 
 .cards{
+  text-align: center;
   display: inline-block;
   justify-content: center;
   justify-items: center;
   flex-direction: column;
   margin-left: 100px;
   margin-right: 50px;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 10px;
   color: white;
   text-align: center;
@@ -220,8 +221,9 @@ background-color: #A2C4D7;
   cursor: pointer;
 }
 
-.cards img:hover {
+.cards:hover {
   transform: scale(1.3);
+  box-shadow: 0 0 20px #A2C4D7;
 }
 
 .modalOculto{
