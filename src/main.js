@@ -21,7 +21,7 @@ document.getElementById("Assassin").addEventListener("click", ()=>{
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
         document.getElementById("modal").style.display= "flex";
-        document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+        document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -41,7 +41,7 @@ document.getElementById("Mage").addEventListener("click", ()=>{
       for (let i = 0; i < cards.length; i++) {
       cards[i].addEventListener("click", () => {
         document.getElementById("modal").style.display= "flex";
-        document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+        document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
     })
   }
 });
@@ -59,7 +59,7 @@ document.getElementById("Fighter").addEventListener("click", ()=>{
        for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -78,7 +78,7 @@ document.getElementById("Marksman").addEventListener("click", ()=>{
        for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -97,7 +97,7 @@ document.getElementById("Support").addEventListener("click", ()=>{
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -116,7 +116,7 @@ document.getElementById("Tank").addEventListener("click", ()=>{
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -134,7 +134,7 @@ document.getElementById("All").addEventListener("click", ()=>{
         for (let i = 0; i < cards.length; i++) {
           cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -154,7 +154,7 @@ btnLeft.addEventListener('click', () => {
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -185,7 +185,7 @@ function selectViewChampions(key) {
 //CERRAR MODAL
 const modalchampions = document.getElementById('modal');
 
-document.getElementById("modal").addEventListener('click', () => {
+document.getElementById("close").addEventListener('click', () => {
   modalchampions.style.display = 'none';
 });
 
@@ -199,7 +199,7 @@ document.getElementById("Busqueda").addEventListener("click", () => {
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].blurb}</p>`
       })
     }
   }
