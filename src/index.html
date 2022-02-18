@@ -36,14 +36,13 @@
 
         <div id="barritaAbajo" class="barrita2">
 
-          <div>
+          <div class="busquedas">
             <input type="text" class="barraDeBusqueda" placeholder="CHAMPIONS BY NAME" id="buscador"> </input>
 
             <button id="Busqueda" class="btnBusqueda">Search</button>
-
           </div>
 
-          <div>
+          <div class="opcionesderol">
             <button class="roleOption" id="All">ALL</button>
             <button class="roleOption" id="Assassin" value="Assassin">ASSASSIN</button>
             <button class="roleOption" id="Fighter" value="Fighter">FIGHTER</button>
@@ -72,13 +71,11 @@
             <option value="13">Zaun</option>
           </select>
         </div>
-        
-        <div id="modal" class="modalOculto">
-        </div>
+      
 
         <div id="cartas" class="cartas">
           
-          <p id="todos"></p>
+          <p id="todos" class="todos"></p>
 
         </div>
 
@@ -88,6 +85,12 @@
 
 
     </div>
+
+    <div id="modal" class="modalOculto">
+      <button class="btn-close" id="close">Close</button> 
+      <div id="segundaseccion"></div>
+    </div>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
