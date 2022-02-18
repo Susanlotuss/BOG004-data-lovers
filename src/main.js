@@ -154,7 +154,7 @@ btnLeft.addEventListener('click', () => {
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("modal").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].blurb}</p>`
         console.log(Filteredchampions[i]);
     })
   }
@@ -185,7 +185,7 @@ function selectViewChampions(key) {
 //CERRAR MODAL
 const modalchampions = document.getElementById('modal');
 
-document.getElementById("modal").addEventListener('click', () => {
+document.getElementById("close").addEventListener('click', () => {
   modalchampions.style.display = 'none';
 });
 

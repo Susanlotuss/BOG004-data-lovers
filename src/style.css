@@ -234,20 +234,22 @@
 
   .modalOculto{
     display: none;
+    background-image: url("/src/img/background.jfif");
+    color: #FFFFFF;
     background-color: #A2C4D7;
     justify-content: center;
     justify-items: center;
-    width: 120vh;
+    width: 90vw;
     height: 90%;
+    margin-left: 5vw;
     position: fixed;
-    margin-left: 50%;
-    transform: translateX(-50%) translateY(-100%);
     margin-top: 10%;
     z-index: 2;
     flex-direction: column;
     align-items: center;
     text-align: center;
     overflow-y: auto;
+    top: 0;
   }
     
   .btn-close{
