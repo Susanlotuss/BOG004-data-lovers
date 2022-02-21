@@ -13,7 +13,7 @@ document.getElementById("Assassin").addEventListener("click", ()=>{
   const condition = "Assassin";
   Filteredchampions = (filterData(Object.values(champions), condition));
   document.getElementById("todos").innerHTML = '';
-  for(let i = 0; i < Filteredchampions.length; i++){
+  for(let i = 0; i < Filteredchampions.length; i++){ 
       document.getElementById("todos").innerHTML +=  `<div class="cards asesinodos"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
     }
 //MODAL EN FILTRO ASESINO

@@ -1,23 +1,24 @@
-import { example, anotherExample } from '../src/data.js';
+import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
+import { filterData} from '../src/data.js';
+import data from '../src/data/lol/lol.js';
+
+const champs = data;
+const champions = champs.data;
+let Filteredchampions = champs.data;
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('filterData', () => {
+  it('It should return all the champions that are Assassin showing how many they are', () => {
+    const condition = "Assassin";
+    Filteredchampions = (filterData(Object.values(champions), condition));
+    expect(Filteredchampions.length).toBe(33);
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it("It should return all the champions that are fighters showing how many they are", () => {
+    const condition = "Fighter";
+    Filteredchampions = (filterData(Object.values(champions), condition));
+    expect(Filteredchampions.length).toBe(66);
   });
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
