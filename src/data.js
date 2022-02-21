@@ -12,6 +12,9 @@ export const filterData = (data, condition) => {
 //FUNCION DE BUSQUEDA
 
 export const searchInput = (data, value) => {
+  if(value === ""){
+    return data;
+  }
   const search = data.filter(eachChampion => eachChampion.name.toLowerCase().includes(value.toLowerCase()));
   return search;
-}
+};

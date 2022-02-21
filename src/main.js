@@ -192,15 +192,18 @@ document.getElementById("close").addEventListener('click', () => {
 //buscador
 document.getElementById("Busqueda").addEventListener("click", () => {
   let result = document.getElementById("buscador").value;
-  Filteredchampions = (searchInput(Object.values(champions), result));
+  if (result !== "") {
+    Filteredchampions = (searchInput(Object.values(champions), result));
     document.getElementById("todos").innerHTML =  `<div class="cards"><img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].name}</p> </div>`;
-
     const cards = document.getElementsByClassName("cards");
-        for (let i = 0; i < cards.length; i++) {
-        cards[i].addEventListener("click", () => {
-          document.getElementById("modal").style.display= "flex";
-          document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].blurb}</p>`
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].addEventListener("click", () => {
+        document.getElementById("modal").style.display= "flex";
+        document.getElementById("segundaseccion").innerHTML = `<button class="btn-close" id="close">Close</button> <h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].blurb}</p>`
       })
     }
+  }
+ 
+
   }
 );
