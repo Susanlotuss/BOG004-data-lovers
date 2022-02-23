@@ -159,7 +159,7 @@
       border-radius: 8px;
       border-style: none;
       box-sizing: border-box;
-      color: #FFFFFF;
+      color: black;
       cursor: pointer;
       display: inline-flex;
       font-size: 14px;
@@ -189,7 +189,7 @@
     border-radius: 5px;
   }
 
-  .reinos{
+  .filtros{
     background-color: #A2C4D7;
   }
 

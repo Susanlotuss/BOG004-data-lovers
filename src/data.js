@@ -18,3 +18,23 @@ export const searchInput = (data, value) => {
   const search = data.filter(eachChampion => eachChampion.name.toLowerCase().includes(value.toLowerCase()));
   return search;
 };
+
+//CALCULAR PROMEDIO
+
+export const average =(eachChampion) => {
+  let sumAttack = 0;
+  for (let i = 0; i < eachChampion.length; i++){
+    sumAttack += eachChampion[i].stats.attackdamageperlevel;
+  };
+  return sumAttack / eachChampion.length;
+};
+
+// FUNCION CALCULAR
+export const computeStats = (arr, num, valor) => {
+  if (valor === 'higher') {
+    const higherPerLevel = arr.filter(eachChampion => eachChampion.stats.attackdamageperlevel > num);
+    return higherPerLevel;
+  }
+  const lessPerLevel = arr.filter(eachChampion => eachChampion.stats.attackdamageperlevel < num);
+  return lessPerLevel;
+};
