@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) and (max-width: 1920px){
+@media screen and (min-width: 500px) and (max-width: 1920px){
 
   *{
       font-family: 'friz_quadrataregular';
@@ -7,10 +7,6 @@
   .oculto{
       display: none;
   }
-
-
-
-
 
   body{
       background-color: black;
@@ -159,7 +155,7 @@
       border-radius: 8px;
       border-style: none;
       box-sizing: border-box;
-      color: #FFFFFF;
+      color: white;
       cursor: pointer;
       display: inline-flex;
       font-size: 14px;
@@ -182,14 +178,12 @@
     width: 190px;
     height: 28px;
     font-weight: bold;
-    color: gray;
-    background: #A2A2A2;
-    mix-blend-mode: hard-light;
-    box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.25);
+    color: black;
+    background: #839ead;
     border-radius: 5px;
   }
 
-  .reinos{
+  .filtros{
     background-color: #A2C4D7;
   }
 
@@ -218,12 +212,13 @@
     flex-wrap: wrap;
     margin-right: 20px;
     margin-top: 90px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: white;
     text-align: center;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
     cursor: pointer;
+    font-size: 20px;
     
   }
 
