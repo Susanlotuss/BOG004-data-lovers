@@ -11,7 +11,6 @@ const champions = champs.data;
 let Filteredchampions = champs.data;
 
 //Intento de filtro por todos 
-
 let userSelection = document.getElementsByClassName("roleOption");
 
 for(let i = 0; i < userSelection.length; i++){
