@@ -24,7 +24,7 @@ export const average =(eachChampion) => {
   let sumAttack = 0;
   for (let i = 0; i < eachChampion.length; i++){
     sumAttack += eachChampion[i].stats.attackdamageperlevel;
-  };
+  }
   return sumAttack / eachChampion.length;
 };
 

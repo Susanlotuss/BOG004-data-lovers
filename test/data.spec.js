@@ -1,5 +1,5 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
-import {filterData, searchInput} from '../src/data.js';
+import {filterData, searchInput, average, computeStats} from '../src/data.js';
 import data from '../src/data/lol/lol.js';
 
 const champs = data;
@@ -45,5 +45,43 @@ describe("searchInput", () =>{
   });
 
 });
+
+describe("average", () =>{
+  it("Must return average attack per level", () =>{
+    const prom = average(Object.values(champions));
+    expect(prom).toBe(3.1510939552238817);
+  })
+})
+
+describe("computeStats", () =>{
+  it("Must check that the final result is complete", () =>{
+    const prom = average(Object.values(champions));
+    const option = "higher";
+    const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
+    expect(Object.keys(arrayStatsByChampsOrder).length).toBe(68);
+  })
+
+  it("Must check that the final result is an object", () =>{
+    const prom = average(Object.values(champions));
+    const option = "higher";
+    const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
+    expect(typeof arrayStatsByChampsOrder).toBe("object");
+  })
+
+  it("Must check that the final result is complete", () =>{
+    const prom = average(Object.values(champions));
+    const option = "";
+    const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
+    expect(Object.keys(arrayStatsByChampsOrder).length).toBe(66);
+  })
+  
+  it("Must check that the final result is an object", () =>{
+    const prom = average(Object.values(champions));
+    const option = "";
+    const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
+    expect(typeof arrayStatsByChampsOrder).toBe("object");
+  })
+
+})
 
 
