@@ -10,7 +10,6 @@ export const filterData = (data, condition) => {
 
 
 //FUNCION DE BUSQUEDA
-
 export const searchInput = (data, value) => {
   if(value === ""){
     return data;
