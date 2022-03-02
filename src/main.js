@@ -19,18 +19,18 @@ for(let i = 0; i < userSelection.length; i++){
     Filteredchampions = (filterData(Object.values(champions), condition));
     document.getElementById("todos").innerHTML = '';
     for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400> <p> ${Filteredchampions[i].name}</p></div>`;
-    };
+      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p> ${Filteredchampions[i].name}</p></div>`;
+    }
     //MODAL
     const cards = document.getElementsByClassName("cards");
       for (let i = 0; i < cards.length; i++) {
           cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 800px> <p>${Filteredchampions[i].blurb}</p>`
       });
-    };
+    }
   });
-};
+}
 
 
 //FILTRO PARA VOLVER A VER TODAS LAS TARJETAS
@@ -38,14 +38,14 @@ document.getElementById("All").addEventListener("click", ()=>{
   Filteredchampions = (filterData(Object.values(champions), ""));
   document.getElementById("todos").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].name}</p> </div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
     }
 //MODAL
     const cards = document.getElementsByClassName("cards");
         for (let i = 0; i < cards.length; i++) {
           cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 500> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</p>`
     })
   }
 });
@@ -55,12 +55,12 @@ document.getElementById("Busqueda").addEventListener("click", () => {
   let result = document.getElementById("buscador").value;
   if (result !== "") {
     Filteredchampions = (searchInput(Object.values(champions), result));
-    document.getElementById("todos").innerHTML =  `<div class="cards"><img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].name}</p> </div>`;
+    document.getElementById("todos").innerHTML =  `<div class="cards"><img src = "${Filteredchampions[0].splash}" width = 400px> <p>${Filteredchampions[0].name}</p> </div>`;
     const cards = document.getElementsByClassName("cards");
       for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 400> <p>${Filteredchampions[0].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[0].name}</h1> <h2>${Filteredchampions[0].title}</h2> <img src = "${Filteredchampions[0].splash}" width = 700px> <p>${Filteredchampions[0].blurb}</p>`
         })
       }
     }
@@ -81,9 +81,9 @@ listAttack.addEventListener('change', () => {
       for (let i = 0; i < cards.length; i++) {
       cards[i].addEventListener("click", () => {
         document.getElementById("modal").style.display= "flex";
-        document.getElementById("segundaseccion").innerHTML = `<h1>${arrayStatsByChampsOrder[i].name}</h1> <h2>${arrayStatsByChampsOrder[i].title}</h2> <img src = "${arrayStatsByChampsOrder[i].splash}" width = 400> <p>${arrayStatsByChampsOrder[i].blurb}</p>`
+        document.getElementById("segundaseccion").innerHTML = `<h1>${arrayStatsByChampsOrder[i].name}</h1> <h2>${arrayStatsByChampsOrder[i].title}</h2> <img src = "${arrayStatsByChampsOrder[i].splash}" width = 700px> <p>${arrayStatsByChampsOrder[i].blurb}</p>`
     });
-  };
+  }
 });
 
 //BOTONES DEL INICIO
@@ -92,7 +92,7 @@ btnLeft.addEventListener('click', () => {
   selectViewChampions('champView');
   Filteredchampions = (filterData(Object.values(champions), ""));
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].name}</p> </div>`;
+      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
     }
   
 //MODAL
@@ -100,9 +100,9 @@ btnLeft.addEventListener('click', () => {
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2> <img src = "${Filteredchampions[i].splash}" width = 400> <p>${Filteredchampions[i].blurb}</p>`
+          document.getElementById("segundaseccion").innerHTML = `<div class="primera"><h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2></div> <div><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</div> <div></p>`
     });
-  };
+  }
 });
 
 
