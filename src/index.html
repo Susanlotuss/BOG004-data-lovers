@@ -6,7 +6,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <section id="PaginaDeInicio" class="inicio">
+
+        <div id="logo"><img src="img/logo lol.png" alt="riot logo" class="logoriot"></div>
+
+        <div id="Btns">
+
+          <button id="campeones" class="btn1">DISCOVER CHAMPIONS</button>
+
+          <a href="https://www.leagueoflegends.com/es-mx/">
+          <button id="jugar" class="btn2">PLAY NOW</button>
+          </a>
+          
+        </div>
+
+      </section>
+
+      <section id="landingPage" class="oculto pagina2">
+        
+        <div id="barrita" class="barrita">
+          <img src="img/logo riot blanco.webp" alt="riot logo" class="rito">
+        </div>
+        
+        <div class="conoceATu">
+          <p class="primero">MEET YOUR</p>
+          <P class="segundo">CHAMPION</P>
+        </div>
+
+        <div id="barritaAbajo" class="barrita2">
+
+          <div class="busquedas">
+            <input type="text" class="barraDeBusqueda" placeholder="CHAMPIONS BY NAME" id="buscador"> </input>
+
+            <button id="Busqueda" class="btnBusqueda">Search</button>
+          </div>
+
+          <div class="opcionesderol">
+            <button class="roleOption" id="All">ALL</button>
+            <button class="roleOption" id="Assassin" value="Assassin">ASSASSIN</button>
+            <button class="roleOption" id="Fighter" value="Fighter">FIGHTER</button>
+            <button class="roleOption" id="Mage" value="Mage">MAGE</button>
+            <button class="roleOption" id="Marksman" value="Marksman">MARKSMAN</button>
+            <button class="roleOption" id="Support" value="Support">SUPPORT</button>
+            <button class="roleOption" id="Tank" value="Tank">TANK</button>
+          </div>
+
+          <select name="estadistica" id="stats" class="filtros">
+            <option selected disabled>Filter by Stats</option>
+            <option class="prom" value="higher" id="puntMax">Stronger</option>
+            <option class="prom" value="less" id="puntMin">Less strong</option>
+          </select>
+        </div>
+
+        <div id="cartas" class="cartas">
+          
+          <p id="todos" class="todos"></p>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div id="modal" class="modalOculto">
+      <div><button class="btn-close" id="close">Close</button> </div>
+      <div id="segundaseccion"></div>
+    </div>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
