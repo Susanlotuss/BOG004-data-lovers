@@ -10,7 +10,6 @@ export const filterData = (data, condition) => {
 
 
 //FUNCION DE BUSQUEDA
-
 export const searchInput = (data, value) => {
   if(value === ""){
     return data;
@@ -20,12 +19,11 @@ export const searchInput = (data, value) => {
 };
 
 //CALCULAR PROMEDIO
-
 export const average =(eachChampion) => {
   let sumAttack = 0;
   for (let i = 0; i < eachChampion.length; i++){
     sumAttack += eachChampion[i].stats.attackdamageperlevel;
-  };
+  }
   return sumAttack / eachChampion.length;
 };
 
