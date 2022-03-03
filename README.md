@@ -1,4 +1,7 @@
 # Data Lovers
+### By Susana Martínez y Karen Baron
+
+---
 
 ## Índice
 
@@ -59,8 +62,17 @@ Teniendo en claro que nuestro público objetivo serían los jugadores de LOL (qu
 ---
 
 ## Diseño final:
-- A partir de lo anterior, establecimos tareas diarias y de sprint relacionados al desarrollo del código de nuestra página web, hasta culminar en el siguiente diseño:
-imagen
+A partir de lo anterior, establecimos tareas diarias y de sprint relacionados al desarrollo del código de nuestra pagina web, donde concluimos que deberíamos tener estos elementos como principales:
+-	Mostrar las tarjetas de los campeones sin necesidad de iniciar sesión
+-	Un filtro que muestre al campeón mas fuerte y el más débil
+-	Las tarjetas se deben elevar y mostrar un color para más dinamismo
+-	Implementar una barra de búsqueda para que los usuarios puedan buscar a su campeón favorito
+
+Con lo anterior creamos este diseño de alta fidelidad según las necesidades de nuestros usuarios:
+
+![diseño final](src/img/final.png)
+
+
 
 -------------
 
@@ -161,8 +173,8 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ## 4. Como se resuelve la problemática del usuario:
 Nuestra página web soluciona los problemas planteados en las historias de usuario, como son:
 
-- A: El que no se requiera de inicio de sesión para descubrir a los campeones (champions) del videojuego "League of Legends".
-- B: El poder visualizar a todos los campeones y sus stats, identificando así a los campeones más fuertes, con mayores niveles de vida o defensa, entre otros.
-- C: El poder reconocer a los campeones dentro de cada uno de los roles que cumplen en el videojuego.
-- D: La existencia de una barra de busqueda que permita a los jugadores con mayores conocimientos dentro del videojuego, localizar a los campeones por su nombre, junto con su historia (Lore).
+- A. El que no se requiera de inicio de sesión para descubrir a los campeones (champions) del videojuego "League of Legends".
+- B. El poder visualizar a todos los campeones y sus stats, identificando así a los campeones más fuertes, con mayores niveles de vida o defensa, entre otros.
+- C. El poder reconocer a los campeones dentro de cada uno de los roles que cumplen en el videojuego.
+- D. La existencia de una barra de busqueda que permita a los jugadores con mayores conocimientos dentro del videojuego, localizar a los campeones por su nombre, junto con su historia (Lore).
 - E. La elevación de la card del campeón al que se esté indicando con el mouse, para así lograr su ubicación de forma sencilla.
