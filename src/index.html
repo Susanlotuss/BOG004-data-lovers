@@ -8,42 +8,42 @@
   <body>
     <div id="root">
 
-      <section id="PaginaDeInicio" class="inicio">
+      <section id="Homepage" class="beginning">
 
         <div id="logo"><img src="img/logo lol.png" alt="riot logo" class="logoriot"></div>
 
         <div id="Btns">
 
-          <button id="campeones" class="btn1">DISCOVER CHAMPIONS</button>
+          <button id="champions" class="btn1">DISCOVER CHAMPIONS</button>
 
           <a href="https://www.leagueoflegends.com/es-mx/">
-          <button id="jugar" class="btn2">PLAY NOW</button>
+          <button id="play" class="btn2">PLAY NOW</button>
           </a>
           
         </div>
 
       </section>
 
-      <section id="landingPage" class="oculto pagina2">
+      <section id="landingPage" class="hidden pag2">
         
-        <div id="barrita" class="barrita">
+        <div id="bar" class="bar">
           <img src="img/logo riot blanco.webp" alt="riot logo" class="rito">
         </div>
         
-        <div class="conoceATu">
-          <p class="primero">MEET YOUR</p>
-          <P class="segundo">CHAMPION</P>
+        <div class="meetyour">
+          <p class="first">MEET YOUR</p>
+          <P class="second">CHAMPION</P>
         </div>
 
-        <div id="barritaAbajo" class="barrita2">
+        <div id="barBottom" class="bar2">
 
-          <div class="busquedas">
-            <input type="text" class="barraDeBusqueda" placeholder="CHAMPIONS BY NAME" id="buscador"> </input>
+          <div class="searches">
+            <input type="text" class="searchBar" placeholder="CHAMPIONS BY NAME" id="seeker"> </input>
 
-            <button id="Busqueda" class="btnBusqueda">Search</button>
+            <button id="Search" class="btnSearch">Search</button>
           </div>
 
-          <div class="opcionesderol">
+          <div class="roleoptions">
             <button class="roleOption" id="All">ALL</button>
             <button class="roleOption" id="Assassin" value="Assassin">ASSASSIN</button>
             <button class="roleOption" id="Fighter" value="Fighter">FIGHTER</button>
@@ -52,8 +52,9 @@
             <button class="roleOption" id="Support" value="Support">SUPPORT</button>
             <button class="roleOption" id="Tank" value="Tank">TANK</button>
           </div>
+          
 
-          <select name="estadistica" id="stats" class="filtros">
+          <select name="statistics" id="stats" class="filters">
             <option selected disabled>Filter by Stats</option>
             <option class="prom" value="higher" id="puntMax">Stronger</option>
             <option class="prom" value="less" id="puntMin">Less strong</option>
@@ -61,9 +62,9 @@
           
         </div>
 
-        <div id="cartas" class="cartas">
+        <div id="letters" class="letters">
           
-          <p id="todos" class="todos"></p>
+          <p id="all" class="all"></p>
 
         </div>
 
@@ -71,7 +72,7 @@
 
     </div>
 
-    <div id="modal" class="modalOculto">
+    <div id="modal" class="modalHidden">
       <div><button class="btn-close" id="close">Close</button> </div>
       <div id="segundaseccion"></div>
     </div>

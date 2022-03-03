@@ -17,9 +17,9 @@ for(let i = 0; i < userSelection.length; i++){
   userSelection[i].addEventListener("click", () =>{
     let condition = document.getElementById(userSelection[i].id).value;
     Filteredchampions = (filterData(Object.values(champions), condition));
-    document.getElementById("todos").innerHTML = '';
+    document.getElementById("all").innerHTML = '';
     for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p> ${Filteredchampions[i].name}</p></div>`;
+      document.getElementById("all").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p> ${Filteredchampions[i].name}</p></div>`;
     }
     //MODAL
     const cards = document.getElementsByClassName("cards");
@@ -36,9 +36,9 @@ for(let i = 0; i < userSelection.length; i++){
 //FILTRO PARA VOLVER A VER TODAS LAS TARJETAS
 document.getElementById("All").addEventListener("click", ()=>{
   Filteredchampions = (filterData(Object.values(champions), ""));
-  document.getElementById("todos").innerHTML = '';
+  document.getElementById("all").innerHTML = '';
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
+      document.getElementById("all").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
     }
 //MODAL
     const cards = document.getElementsByClassName("cards");
@@ -51,11 +51,11 @@ document.getElementById("All").addEventListener("click", ()=>{
 });
 
 //BARRA DE BUSCADOR
-document.getElementById("Busqueda").addEventListener("click", () => {
-  let result = document.getElementById("buscador").value;
+document.getElementById("Search").addEventListener("click", () => {
+  let result = document.getElementById("seeker").value;
   if (result !== "") {
     Filteredchampions = (searchInput(Object.values(champions), result));
-    document.getElementById("todos").innerHTML =  `<div class="cards"><img src = "${Filteredchampions[0].splash}" width = 400px> <p>${Filteredchampions[0].name}</p> </div>`;
+    document.getElementById("all").innerHTML =  `<div class="cards"><img src = "${Filteredchampions[0].splash}" width = 400px> <p>${Filteredchampions[0].name}</p> </div>`;
     const cards = document.getElementsByClassName("cards");
       for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
@@ -73,9 +73,9 @@ const listAttack = document.getElementById('stats');
 listAttack.addEventListener('change', () => {
   const option = document.getElementById('stats').value;
   const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
-  document.getElementById("todos").innerHTML = '';
+  document.getElementById("all").innerHTML = '';
   for(let i = 0; i < arrayStatsByChampsOrder.length; i++){
-    document.getElementById('todos').innerHTML += `<div class="cards"><img src = "${arrayStatsByChampsOrder[i].splash}" width = 400> <p>${arrayStatsByChampsOrder[i].name}</p> </div>`;
+    document.getElementById('all').innerHTML += `<div class="cards"><img src = "${arrayStatsByChampsOrder[i].splash}" width = 400> <p>${arrayStatsByChampsOrder[i].name}</p> </div>`;
   }
   const cards = document.getElementsByClassName("cards");
       for (let i = 0; i < cards.length; i++) {
@@ -87,12 +87,12 @@ listAttack.addEventListener('change', () => {
 });
 
 //BOTONES DEL INICIO
-const btnLeft = document.getElementById('campeones');
+const btnLeft = document.getElementById('champions');
 btnLeft.addEventListener('click', () => {
   selectViewChampions('champView');
   Filteredchampions = (filterData(Object.values(champions), ""));
   for(let i = 0; i < Filteredchampions.length; i++){
-      document.getElementById("todos").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
+      document.getElementById("all").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
     }
   
 //MODAL
@@ -107,7 +107,7 @@ btnLeft.addEventListener('click', () => {
 
 
 //BOTONES CAMBIO DE PÁGINA
-const btnRight = document.getElementById('jugar');
+const btnRight = document.getElementById('play');
 
 btnRight.addEventListener('click', () => {
   selectViewChampions('gameView');
@@ -115,7 +115,7 @@ btnRight.addEventListener('click', () => {
 
 function selectViewChampions(key) {
 
-  const sectionHome = document.getElementById('PaginaDeInicio');
+  const sectionHome = document.getElementById('Homepage');
   const sectionLanding = document.getElementById('landingPage');
 
   if (key === 'champView') {
