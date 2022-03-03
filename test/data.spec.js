@@ -61,25 +61,11 @@ describe("computeStats", () =>{
     expect(Object.keys(arrayStatsByChampsOrder).length).toBe(68);
   })
 
-  it("Must check that the final result is an object", () =>{
-    const prom = average(Object.values(champions));
-    const option = "higher";
-    const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
-    expect(typeof arrayStatsByChampsOrder).toBe("object");
-  })
-
   it("Must check that the final result is complete", () =>{
     const prom = average(Object.values(champions));
     const option = "";
     const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
     expect(Object.keys(arrayStatsByChampsOrder).length).toBe(66);
-  })
-  
-  it("Must check that the final result is an object", () =>{
-    const prom = average(Object.values(champions));
-    const option = "";
-    const arrayStatsByChampsOrder = computeStats(Object.values(champions), prom, option);
-    expect(typeof arrayStatsByChampsOrder).toBe("object");
   })
 
 })
