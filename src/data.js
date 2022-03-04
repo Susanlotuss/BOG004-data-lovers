@@ -36,3 +36,24 @@ export const computeStats = (arr, num, valor) => {
   const lessPerLevel = arr.filter(eachChampion => eachChampion.stats.attackdamageperlevel < num);
   return lessPerLevel;
 };
+
+//SORT ASCENDENTE
+export const sortedByNameA = (data) => {
+  let result = '';
+  result = data.sort((a, b) => {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (b.name > a.name) {
+      return -1;
+    }
+    return 0;
+  });
+  return result;
+};
+
+//SORT DESCENDENTE
+export const sortedByNameD = (data) => {
+  const result = data.reverse();
+  return result;
+};
