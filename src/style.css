@@ -9,7 +9,8 @@
   }
 
   body{
-      background-color: black;
+    margin: 0px;
+    background-color: black;
   }
 
   .beginning{
@@ -124,6 +125,7 @@
   }
 
   .roleoptions{
+    font-family: monospace;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -136,12 +138,28 @@
     outline: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 10px;
     margin-top: 5px;
   }
 
   .roleOption:hover{
+    color: #294369;
+  }
+
+  .order{
+    font-family: monospace;
+    border: none;
+    background-color: #A2C4D7;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  .order:hover{
     color: #294369;
   }
 
@@ -160,6 +178,7 @@
       cursor: pointer;
       display: inline-flex;
       font-size: 14px;
+      font-family: monospace;
       height: 35px;
       margin: 0;
       outline: none;
@@ -182,10 +201,16 @@
     color: black;
     background: #839ead;
     border-radius: 5px;
+    font-family: monospace;
   }
 
   .filters{
+    font-family: monospace;
     background-color: #A2C4D7;
+  }
+
+  .prom{
+    font-family: monospace;
   }
 
   .letters{
@@ -197,7 +222,6 @@
   }
 
   .cards{
-    font-family: monospace;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -215,7 +239,7 @@
 
   .cards:hover {
     transform: scale(1.3);
-    box-shadow: 0px 0px 15px 15px #A2C4D7; 
+    box-shadow: 0px 0px 15px 15px #A2C4D7;
   }
 
   .modalHidden{
