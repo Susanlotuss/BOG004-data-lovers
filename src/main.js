@@ -2,7 +2,9 @@ import data from './data/lol/lol.js';
 import {filterData, 
         searchInput,
         average,
-        computeStats
+        computeStats,
+        sortedByNameA,
+        sortedByNameD
        } from './data.js';
 
 //FUNCIONES DE LLAMADO DE LA DATA
@@ -83,6 +85,44 @@ listAttack.addEventListener('change', () => {
         document.getElementById("modal").style.display= "flex";
         document.getElementById("segundaseccion").innerHTML = `<h1>${arrayStatsByChampsOrder[i].name}</h1> <h2>${arrayStatsByChampsOrder[i].title}</h2> <img src = "${arrayStatsByChampsOrder[i].splash}" width = 700px> <p>${arrayStatsByChampsOrder[i].blurb}</p>`
     });
+  }
+});
+
+//FUNCION SORT
+// btn de filtrado ascendente
+document.getElementById("order").addEventListener('click', () => {
+  Filteredchampions = (sortedByNameA(Object.values(champions)));
+  document.getElementById("all").innerHTML = '';
+  for(let i = 0; i < Filteredchampions.length; i++){
+    document.getElementById("all").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
+  }
+
+//MODAL
+    const cards = document.getElementsByClassName("cards");
+      for (let i = 0; i < cards.length; i++) {
+      cards[i].addEventListener("click", () => {
+        document.getElementById("modal").style.display= "flex";
+        document.getElementById("segundaseccion").innerHTML = `<div class="primera"><h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2></div> <div><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</div> <div></p>`
+   });
+  }
+});
+
+
+// btn de filtrado descendente
+document.getElementById("orderD").addEventListener("click", () =>{
+  Filteredchampions = (sortedByNameD(Object.values(champions)));
+  document.getElementById("all").innerHTML = '';
+  for(let i = 0; i < Filteredchampions.length; i++){
+    document.getElementById("all").innerHTML +=  `<div class="cards"><img src = "${Filteredchampions[i].splash}" width = 400px> <p>${Filteredchampions[i].name}</p> </div>`;
+  }
+
+//MODAL
+    const cards = document.getElementsByClassName("cards");
+      for (let i = 0; i < cards.length; i++) {
+      cards[i].addEventListener("click", () => {
+        document.getElementById("modal").style.display= "flex";
+        document.getElementById("segundaseccion").innerHTML = `<div class="primera"><h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2></div> <div><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</div> <div></p>`
+   });
   }
 });
 
