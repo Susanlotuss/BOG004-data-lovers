@@ -102,7 +102,7 @@ document.getElementById("order").addEventListener('click', () => {
       for (let i = 0; i < cards.length; i++) {
       cards[i].addEventListener("click", () => {
         document.getElementById("modal").style.display= "flex";
-        document.getElementById("segundaseccion").innerHTML = `<div class="primera"><h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2></div> <div><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</div> <div></p>`
+        document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</p>`
    });
   }
 });
@@ -121,7 +121,7 @@ document.getElementById("orderD").addEventListener("click", () =>{
       for (let i = 0; i < cards.length; i++) {
       cards[i].addEventListener("click", () => {
         document.getElementById("modal").style.display= "flex";
-        document.getElementById("segundaseccion").innerHTML = `<div class="primera"><h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2></div> <div><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</div> <div></p>`
+        document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</p>`
    });
   }
 });
@@ -140,7 +140,7 @@ btnLeft.addEventListener('click', () => {
         for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
           document.getElementById("modal").style.display= "flex";
-          document.getElementById("segundaseccion").innerHTML = `<div class="primera"><h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2></div> <div><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</div> <div></p>`
+          document.getElementById("segundaseccion").innerHTML = `<h1>${Filteredchampions[i].name}</h1> <h2>${Filteredchampions[i].title}</h2><img src = "${Filteredchampions[i].splash}" width = 700px> <p>${Filteredchampions[i].blurb}</p>`
     });
   }
 });

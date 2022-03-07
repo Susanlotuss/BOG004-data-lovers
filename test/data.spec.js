@@ -1,5 +1,5 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
-import {filterData, searchInput, average, computeStats} from '../src/data.js';
+import {filterData, searchInput, average, computeStats, sortedByNameA, sortedByNameD} from '../src/data.js';
 import data from '../src/data/lol/lol.js';
 
 const champs = data;
@@ -70,4 +70,32 @@ describe("computeStats", () =>{
 
 })
 
+
+describe('sortedByNameA', () => {
+  it('Test if sortByName sorts from a-z', () => {
+    Filteredchampions = (sortedByNameA(Object.values(champions)));
+    let sorted = true;
+    for (let i = 1; Filteredchampions && i < Filteredchampions.length; i++) {
+      if (Filteredchampions[i - 1].name[0] > Filteredchampions[i].name[0]) {
+        sorted = false;
+      }
+    }
+    expect(sorted).toEqual(true);
+  });
+});
+
+
+describe.only('sortedByNameD', () => {
+  it('Test if sortByName sorts from z-a', () => {
+    Filteredchampions = (sortedByNameA(Object.values(champions)));
+    Filteredchampions = (sortedByNameD(Filteredchampions));
+    let sorted = true;
+    for (let i = 1; Filteredchampions && i < Filteredchampions.length; i++) {
+      if (Filteredchampions[i - 1].name[0] < Filteredchampions[i].name[0]) {
+        sorted = false;
+      }
+    }
+    expect(sorted).toEqual(true);
+  });
+});
 
