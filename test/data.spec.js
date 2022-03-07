@@ -85,7 +85,7 @@ describe('sortedByNameA', () => {
 });
 
 
-describe.only('sortedByNameD', () => {
+describe('sortedByNameD', () => {
   it('Test if sortByName sorts from z-a', () => {
     Filteredchampions = (sortedByNameA(Object.values(champions)));
     Filteredchampions = (sortedByNameD(Filteredchampions));
