@@ -37,7 +37,6 @@ describe("searchInput", () =>{
     Filteredchampions = (searchInput(Object.values(champions), result));
     expect(Filteredchampions[0].name).toBe("Ahri");
   });
-
   it("Should return the same data", () =>{
     const result = "";
     Filteredchampions = (searchInput(Object.values(champions), result));

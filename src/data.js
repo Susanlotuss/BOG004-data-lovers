@@ -41,6 +41,11 @@ export const computeStats = (arr, num, valor) => {
 export const sortedByNameA = (data) => {
   let result = '';
   result = data.sort((a, b) => {
+
+  //1. -1 ....a comes first
+  //2. 0 .....nothing will change
+  //3. 1 .....b comes first
+
     if (a.name > b.name) {
       return 1;
     }
